@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<img src="eatthefrog.jpg" alt="Smiley face"height="450">
+<div id='testing'></div>
+
+<script type="text/javascript">
+	var test = window.clipboardData.getData("Text");
+	// var data = ClipboardEvent.clipboardData
+	document.getElementById("testing").innerHTML = test;
+	// window.clipboardData.onchange= function(){
+	// 	document.getElementById("testing").innerHTML = test;
+	// }
+// var data = ClipboardEvent.clipboardData
+
+	// console.log(data)
+// window.addEventListener('copy', function(e){
+//     // e.clipboardData.setData('text/plain', 'Hello, world!');
+//     // e.clipboardData.setData('text/html', '<b>Hello, world!</b>');
+
+//     document.getElementById("testing").innerHTML = 'something was changed';
+//     // document.getElementById("testing").innerHTML = e.clipboardData.getData('Text');
+//     e.preventDefault(); // We want our data, not data from any selection, to be written to the clipboard
+// });
+
+// 	x = {
+//   aInternal: 10,
+//   aListener: function(val) {},
+//   set a(val) {
+//     this.aInternal = val;
+//     this.aListener(val);
+//   },
+//   get a() {
+//     return this.aInternal;
+//   },
+//   registerListener: function(listener) {
+//     this.aListener = listener;
+//   }
+// }
+
+// x.registerListener(function(val) {
+//   document.getElementById("testing").innerHTML = ("Someone changed the value of x.a to " + val);
+// });
+
+// x.a = ('alsls')
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="./styles.css">
+</head>
+<body>
+
+<img src="eatthefrog.jpg" alt="Smiley face"height="200">
+<div id='count'>0:00</div>
+<div id='testing' class='card'></div>
+
+<script type="text/javascript">
+
+	var test = window.clipboardData.getData("Text");
+	var count = "0:00";
+	
+	setInterval(function(){
+		// If the clipboard has not changed
+		if (test === window.clipboardData.getData("Text")) {
+			document.getElementById("testing").innerHTML = 'test'
+		}
+		 //  If the clipboard has changed
+		 else {
+			document.getElementById("testing").innerHTML = "else"
+		}
+		test = window.clipboardData.getData("Text");
+	// var data = ClipboardEvent.clipboardData
+	// document.getElementById("testing").innerHTML = test;
+	// printMe(test);
+
+	}, 30);
+
+	// document.getElementById("count").innerHTML = test;
+
+
+
+
+
+	// var test = window.clipboardData.getData("Text");
+	// // var data = ClipboardEvent.clipboardData
+	// document.getElementById("testing").innerHTML = test;
+	// window.clipboardData.onchange= function(){
+	// 	document.getElementById("testing").innerHTML = test;
+	// }
+// var data = ClipboardEvent.clipboardData
+
+
+	// console.log(data)
+// window.addEventListener('copy', function(e){
+//     // e.clipboardData.setData('text/plain', 'Hello, world!');
+//     // e.clipboardData.setData('text/html', '<b>Hello, world!</b>');
+
+//     document.getElementById("testing").innerHTML = 'something was changed';
+//     // document.getElementById("testing").innerHTML = e.clipboardData.getData('Text');
+//     e.preventDefault(); // We want our data, not data from any selection, to be written to the clipboard
+// });
+
+// 	x = {
+//   aInternal: 10,
+//   aListener: function(val) {},
+//   set a(val) {
+//     this.aInternal = val;
+//     this.aListener(val);
+//   },
+//   get a() {
+//     return this.aInternal;
+//   },
+//   registerListener: function(listener) {
+//     this.aListener = listener;
+//   }
+// }
+
+// x.registerListener(function(val) {
+//   document.getElementById("testing").innerHTML = ("Someone changed the value of x.a to " + val);
+// });
+
+// x.a = ('alsls')
+
+
+</script>
+</body>
+</html>
